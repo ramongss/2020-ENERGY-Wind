@@ -1,3 +1,3 @@
 # Machine Learning Codes
 
-*R* Codes of a journal paper to be submitted to [Elsevier - International Journal of Forecasting (IJF)](https://www.journals.elsevier.com/international-journal-of-forecasting).
+*R* Codes of a journal paper submitted to [Elsevier - Renewable Energy](https://www.journals.elsevier.com/renewable-energy).

@@ -7,4 +7,9 @@ Dataset 1 | Dataset 2 | Dataset 3
 
 ### Publication
 - [Preprint (ResearchGate)]()
-- [Conference paper (ScienceDirect)]()
+- [Journal paper (ScienceDirect)]()
+
+### How to cite this paper
+```bibtex
+
+```

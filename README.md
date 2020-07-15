@@ -1,3 +1,9 @@
-# Machine Learning Codes
+# Publication in Energy Elsevier Journal
+## :dash::zap: A novel hybrid decomposition-ensemble learning method for very short-term wind energy multi-step ahead forecasting
+![Predictions](Pred_day1_squared.png) | ![Radar plot](radaplot_dataset1.png)
+:------------------------------------:|:-------------------------:
+Predictions versus observed values    | Errors’ standard deviation for each model
 
-*R* Codes of a journal paper submitted to [Elsevier - Energy](https://www.journals.elsevier.com/energy).
+### Publication
+- [Preprint (ResearchGate)]()
+- [Conference paper (ScienceDirect)]()

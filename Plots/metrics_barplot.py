@@ -11,11 +11,13 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv("metrics.csv")
+df = pd.read_csv("metrics1.csv")
 
-df.rename(columns={'smape': 'sMAPE', 'rrmse': 'RRMSE'}, inplace=True)
+# df.rename(columns={'smape': 'sMAPE', 'rrmse': 'RRMSE'}, inplace=True)
 
-metrics = list(df[['sMAPE','RRMSE']])
+# metrics = list(df[['sMAPE','RRMSE']])
+
+metrics = list(df[['MAPE']])
 
 for metric in metrics:
     sns.set_style('whitegrid')
@@ -30,4 +32,5 @@ for metric in metrics:
     axes[2].set_title("Dataset 3")
     # g.savefig('boxplot_{}.png'.format(metric), dpi=300)
     # g.savefig('boxplot_{}.eps'.format(metric), dpi=300)
+    # g.savefig('barplot_{}.pdf'.format(metric), dpi=300)
     plt.show()

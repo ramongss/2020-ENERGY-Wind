@@ -31,5 +31,5 @@ for day in range(0, 3):
     plt.tick_params(axis='y', labelsize=14)
     plt.grid(color='gainsboro')
     # plt.savefig('Pred_day{}.pdf'.format(day+1))
-    plt.savefig('Pred_day{}_squared.eps'.format(day+1), dpi=300)
-    # plt.show()
+    # plt.savefig('Pred_day{}_squared.eps'.format(day+1), dpi=300)
+    plt.show()

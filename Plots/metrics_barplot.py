@@ -33,4 +33,5 @@ for metric in metrics:
     # g.savefig('boxplot_{}.png'.format(metric), dpi=300)
     # g.savefig('boxplot_{}.eps'.format(metric), dpi=300)
     # g.savefig('barplot_{}.pdf'.format(metric), dpi=300)
-    plt.show()
+    # plt.show()
+    print(metric)

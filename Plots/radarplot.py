@@ -7,13 +7,16 @@ for ii in range(1,4):
     # Set data
     df = pd.read_csv('dataset{}_std.csv'.format(ii))
 
-    df.columns = ['Model','10 minutes', '30 minutes']
+    df.columns = ['Model','10 minutes', '20 minutes', '30 minutes']
 
     df = df.T
 
     df.columns = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N']
     df.drop('Model', axis=0, inplace=True)
     df.reset_index(drop=True, inplace=True)
+    
+    # create a color palette
+    palette = plt.get_cmap('Set1')
 
     # ------- PART 1: Create background
 
@@ -49,20 +52,27 @@ for ii in range(1,4):
     # Ind1
     values=df.loc[0].values.flatten().tolist()
     values += values[:1]
-    ax.plot(angles, values, linewidth=1, linestyle='solid', label="10 minutes ahead")
-    ax.fill(angles, values, 'b', alpha=0.1)
+    ax.plot(angles, values, color=palette(1), linewidth=1, linestyle='solid', label="10 min ahead")
+    ax.fill(angles, values, color=palette(1), alpha=0.1)
 
     # Ind2
     values=df.loc[1].values.flatten().tolist()
     values += values[:1]
-    ax.plot(angles, values, linewidth=1, linestyle='solid', label="30 minutes ahead")
-    ax.fill(angles, values, 'r', alpha=0.1)
+    ax.plot(angles, values, color=palette(0), linewidth=1, linestyle='solid', label="20 min ahead")
+    ax.fill(angles, values, color=palette(0), alpha=0.1)
+    
+    # Ind3
+    values=df.loc[2].values.flatten().tolist()
+    values += values[:1]
+    ax.plot(angles, values, color=palette(4), linewidth=1, linestyle='solid', label="30 min ahead")
+    ax.fill(angles, values, color=palette(4), alpha=0.1)
 
     # Add legend
     # plt.legend(loc='upper right', bbox_to_anchor=(0.1, 0.1), fontsize=12) # legend at bottom left
-    plt.legend(loc='lower right', bbox_to_anchor=(0.1, 0.9), fontsize=12) # legend at up left
+    plt.legend(loc='lower left', bbox_to_anchor=(0.8, 0.9),
+                    fancybox=True, shadow=True, fontsize=12) # legend at up left
     # plt.title('Dataset {}'.format(ii))
 
-    # plt.savefig('radaplot_dataset{}.png'.format(ii), dpi=300, bbox_inches='tight', pad_inches=0)
+    plt.savefig('radaplot_dataset{}.png'.format(ii), dpi=300, bbox_inches='tight', pad_inches=0)
     # plt.savefig('radaplot_dataset{}.pdf'.format(ii), dpi=300, bbox_inches='tight', pad_inches=0)
-    plt.show()
+    # plt.show()

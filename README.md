@@ -14,7 +14,7 @@
 ```bibtex
 @article{dasilva2020novel,
   title={A novel decomposition-ensemble learning framework for multi-step ahead wind energy forecasting},
-  author={da Silva, Ramon and Ribeiro, Matheus Henrique Dal Molin and Moreno, Sinvaldo Rodrigues and Mariani, Viviana Cocco and Coelho, Leandro Santos},
+  author={da Silva, Ramon Gomes and Ribeiro, Matheus Henrique Dal Molin and Moreno, Sinvaldo Rodrigues and Mariani, Viviana Cocco and Coelho, Leandro Santos},
   journal={Energy},
   volume={},
   pages={119174},
